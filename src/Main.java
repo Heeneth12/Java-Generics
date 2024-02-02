@@ -1,4 +1,4 @@
-//uc2 find the max float number 
+//uc3 find the max String  
 
 class Generic<E extends Comparable<E>> {
     private E num1;
@@ -24,15 +24,24 @@ class Generic<E extends Comparable<E>> {
 
 public class Main {
     public static void main(String[] args) {
+
+        // for Integer
         Generic<Integer> obj = new Generic<>();
         obj.setNums(42, 13, 22);
-
         // Printing the maximum number
         System.out.println("Maximum Number in int is : " + obj.getMaxNums());
 
+        // for Float
         Generic<Float> obj1 = new Generic<Float>();
         obj1.setNums(12.1f, 13.4f, 32.1f);
         // Printing the maximum number
         System.out.println("Maximum Number in Float is : " + obj1.getMaxNums());
+
+        // for String
+        Generic<String> obj2 = new Generic<String>();
+        obj2.setNums("Apple", "Peach", "Banana");
+        // Printing the maximum number
+        System.out.println("Maximum String is  : " + obj2.getMaxNums());
+
     }
 }
